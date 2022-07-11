@@ -1,0 +1,216 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+a {
+	text-decoration:none;
+}
+
+/* Add a card effect for articles */
+article {
+  background-color: white;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+article h2{
+	color: #1a3a74;
+}
+
+article h3,h4,h5,h6,h7{
+	color: #3F3F3F;
+}
+
+/* Right column */
+aside {
+  float: left;
+  width: 100%;
+  padding-left: 0px;
+}
+
+body {
+  font-family: Arial;
+  padding: 5px;
+  padding-top: 0px;
+  background: #EFEFEF;
+	margin: 0%;
+}
+
+/* Footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 0px;
+}
+
+footer a {
+  display: block;
+  color: #5F7F37;
+  float: left;
+	padding: 1px;
+  text-align: center;
+}
+
+footer img{
+	width: 25%
+}
+
+/* Header/Blog Title */
+header {
+  padding: 5px;
+  padding-top: 0px;
+  text-align: center;
+  background: white;
+}
+
+header h1 {
+	color: #7F003F;
+  font-size: 50px;
+}
+
+header img{
+	width: 67%
+}
+
+img {
+    pointer-events: none;
+}
+
+/* Left column */
+main {
+  float: left;
+  width: 100%;
+  padding: 0px;
+}
+
+main article img{
+  border: 1px solid #9F9F9F;
+  padding: 5px;
+}
+
+/* Style the top navigation bar */
+nav {
+  overflow: hidden;
+  background-color: #5F7F37;
+}
+
+/* Style the nav links */
+nav a {
+  display: block;
+  color: #F7F7F7;
+  float: none;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Change color on hover */
+nav a:hover {
+  background-color: #87AF4F;
+  color: black;
+}
+
+nav a .floatright {
+	float: right;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 2px solid #DFDFDF;
+}
+
+td, th {
+  text-align: left;
+  padding: 5px;
+}
+
+th {
+  border: 2px solid #9F9F9F;
+}
+
+.block {
+  display: block;
+}
+
+.bordeaux{
+	color: #7F003F;
+	font-weight: 800
+}
+
+/* Clear floats after the columns */
+.center:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo{
+	width: 80%
+}
+
+.stickybottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+.stickytop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* Responsive layout - when the screen is more than 800px wide, navigation links is not viewed */
+@media screen and (min-width: 800px) {
+  aside {
+    width: 25%;
+  }
+  aside article{
+    background-color: #AFEFBF;
+  }
+  body{
+    margin: 10%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  footer a {
+    padding: 15px;
+  }
+  main {
+    width: 75%;
+  }
+  nav a{
+    color: #5F7F37;
+    float: left;
+    width: auto;
+  }
+	nav a:hover {
+		background-color: #5F7F37;
+		color: #5F7F37;
+	}
+}
+
+@media screen and (max-width: 799px) and (min-width: 550px) {
+  footer a {
+    padding: 5px;
+  }
+  nav a {
+    float: left;
+    width: auto;
+  }
+}
+
